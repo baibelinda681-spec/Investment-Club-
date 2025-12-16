@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Investment Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #020617;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1.5rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav h1 {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .nav a {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1d4ed8, #020617);
+      color: white;
+      padding: 4rem 0;
+    }
+
+    .hero h2 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 1.5rem;
+      color: #e5e7eb;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #22c55e;
+      color: #022c22;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    section:nth-child(even) {
+      background-color: #e5e7eb;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 0.75rem;
+      border: 1px solid #e2e8f0;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 0.7rem;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+    }
+
+    th {
+      background-color: #020617;
+      color: white;
+    }
+
+    footer {
+      background-color: #020617;
+      color: #9ca3af;
+      padding: 1rem 0;
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <h1>Investment Club</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#updates">Updates</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#team">Team</a>
+      <a href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Investment Club</h2>
+    <p>
+      A student-run organization focused on learning about financial markets,
+      stock research, and competitive investing.
+    </p>
+    <a href="#updates" class="btn">View Weekly Market Update</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h3>What We Do</h3>
+    <div class="grid">
+      <div class="card">
+        We meet weekly to discuss market news, analyze stocks, and learn how real investing works.
+      </div>
+      <div class="card">
+        Members work in teams on stock pitches, mock portfolios, and research projects.
+      </div>
+      <div class="card">
+        We compete in regional and national finance competitions throughout the year.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="updates">
+  <div class="container">
+    <h3>Weekly Market Update</h3>
+    <div class="grid">
+      <div class="card">
+        <strong>Week of Dec 9</strong><br />
+        Markets rose as tech stocks rallied after strong earnings.
+      </div>
+      <div class="card">
+        <strong>Stock of the Week</strong><br />
+        Example Corp (EXMP) gained 7% following a major product announcement.
+      </div>
+      <div class="card">
+        <strong>Discussion Question</strong><br />
+        Which stock would you buy today for long-term growth?
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competitions">
+  <div class="container">
+    <h3>Competitions</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Stock Pitch Challenge</td>
+        <td>Pitch</td>
+        <td>Upcoming</td>
+      </tr>
+      <tr>
+        <td>Student Investment League</td>
+        <td>Portfolio</td>
+        <td>Ongoing</td>
+      </tr>
+      <tr>
+        <td>Finance Case Competition</td>
+        <td>Case</td>
+        <td>Completed</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="team">
+  <div class="container">
+    <h3>Leadership Team</h3>
+    <div class="grid">
+      <div class="card">
+        <strong>President</strong><br />
+        Oversees meetings and club direction.
+      </div>
+      <div class="card">
+        <strong>Vice President</strong><br />
+        Supports projects and competition teams.
+      </div>
+      <div class="card">
+        <strong>Faculty Advisor</strong><br />
+        Provides guidance and oversight.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="container">
+    <h3>Join the Club</h3>
+    <p>
+      Meetings: Weekly after school<br />
+      Location: Room TBD<br />
+      Email: investmentclub@example.com
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Investment Club
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
